@@ -1,22 +1,20 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import '@styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
+export const metadata = {
     title: 'Share Prompts',
-    description: 'Prompts to share which can be used in AI tools'
+    description: 'Discover and Share AI powered prompts'
 };
-
-export default function RootLayout({
-    children
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html lang="en">
-            <body className={inter.className}>{children}</body>
+            <body>
+                <div className="main">
+                    <div className="gradient"></div>
+                </div>
+                <main className="app">{children}</main>
+            </body>
         </html>
     );
-}
+};
+
+export default RootLayout;

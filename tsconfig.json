@@ -18,7 +18,7 @@
             }
         ],
         "paths": {
-            "@/*": ["./*"]
+            "@*": ["./*"]
         }
     },
     "include": [
@@ -26,7 +26,8 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts",
-        "app/posts/[postId]"
+        "app/posts/[postId]",
+        "app/layout.tsx"
     ],
     "exclude": ["node_modules"]
 }
