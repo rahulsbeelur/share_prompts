@@ -1,12 +1,9 @@
 'use client';
 
-import React from 'react'
+import React from 'react';
 
-const Post = ({params: {postId}}: {params: {postId: string}}) => {
-  console.log("Here", postId);
-  return (
-    <div>{postId}</div>
-  )
-}
+const Post = ({ params: { postId } }: { params: { postId: string } }) => {
+    return <div>{postId}</div>;
+};
 
 export default Post;
