@@ -27,7 +27,8 @@
         "**/*.tsx",
         ".next/types/**/*.ts",
         "app/posts/[postId]",
-        "app/layout.tsx"
+        "app/layout.tsx",
+        "components/Nav.jsx"
     ],
     "exclude": ["node_modules"]
 }
