@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import Nav from '@components/Nav';
 
 export const metadata = {
     title: 'Share Prompts',
@@ -11,7 +12,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                 <div className="main">
                     <div className="gradient"></div>
                 </div>
-                <main className="app">{children}</main>
+                <main className="app">
+                    <Nav />
+                    {children}
+                </main>
             </body>
         </html>
     );
